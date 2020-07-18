@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Damian Jahn's URL Shortener</title>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+
+</head>
+<body>
+<section class="section">
+    <div class="container">
+
+        <center>
+            <h1 class="title">URL Shortener</h1>
+            <h2 class="subtitle">
+                Simple secure service providing
+                <strong>HTTP redirect</strong> to your favorite services.
+            </h2>
+        </center>
+        <form method="post" action="#">
+            {% csrf_token %}
+            <div class="field">
+                <label class="label"></label>
+                <div class="control">
+                    <input name="url" class="input" type="text"
+                           placeholder="URL to shorten">
+                </div>
+            </div>
+            <center>
+                <button class="button" type="submit">Submit</button>
+            </center>
+        </form>
+    </div>
+</section>
+
+</body>
+</html>
