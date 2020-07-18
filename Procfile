@@ -1,2 +1,2 @@
 web: gunicorn JMRtask.wsgi
-worker: python -m migrate
+worker: python -m manage migrate
