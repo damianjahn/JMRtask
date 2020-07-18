@@ -1,2 +1,2 @@
 run:
-  web: gunicorn -b 0.0.0.0:80 JMRtask.wsgi
+  web: gunicorn JMRtask.wsgi
