@@ -25,7 +25,9 @@ SECRET_KEY = 'asn62^+9$n_fi58n-t!601%&%*s(*q&2i0c5r#*@sxcl2+t@k3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+'interviewjmr.herokuapp.com', '*'
+]
 
 STATIC_ROOT = 'static/'
 # Application definition
